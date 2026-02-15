@@ -72,7 +72,7 @@
 - [x] ex02 alkanes
 - [x] ex03 reactions
 - [x] ex04 alkane combustion
-- [ ] ex05 incomplete combustion
+- [x] ex05 incomplete combustion
 
 ## 08 Monoids and Monads
 - [ ] ex00 all along the watchtower
