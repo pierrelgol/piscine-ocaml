@@ -50,7 +50,7 @@
 - [x] ex05 eu_dist
 - [x] ex06 examples_of_file
 - [x] ex07 one_nn
-- [ ] ex08 k_nn
+- [x] ex08 k_nn
 
 ## 05 Functors
 - [ ] ex00 Set.Make
