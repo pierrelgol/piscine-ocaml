@@ -3,7 +3,7 @@
 ## 00 Basic syntax and semantics
 - [x] ex00 ft_test_sign
 - [x] ex01 ft_countdown
-- [ ] ex02 ft_power
+- [x] ex02 ft_power
 - [ ] ex03 ft_print_alphabet
 - [ ] ex04 ft_print_comb
 - [ ] ex05 ft_print_rev
