@@ -13,7 +13,7 @@
 - [x] ex09 ft_print_comb2
 
 ## 01 Recursion and higher-order functions
-- [ ] ex00 repeat_x
+- [x] ex00 repeat_x
 - [ ] ex01 repeat_string
 - [ ] ex02 ackermann
 - [ ] ex03 tak
