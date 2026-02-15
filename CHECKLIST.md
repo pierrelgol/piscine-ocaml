@@ -42,7 +42,7 @@
 - [x] ex03 Deck
 
 ## 04 Imperative features
-- [ ] ex00 micronap
+- [x] ex00 micronap
 - [ ] ex01 ft_ref
 - [ ] ex02 jokes
 - [ ] ex03 jokes improved
