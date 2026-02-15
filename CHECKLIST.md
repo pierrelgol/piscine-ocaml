@@ -56,7 +56,7 @@
 - [x] ex00 Set.Make
 - [x] ex01 Hashtbl.Make
 - [x] ex02 Projections
-- [ ] ex03 Fixed point
+- [x] ex03 Fixed point
 - [ ] ex04 Evalexpr
 
 ## 06 Object-oriented programming 1
