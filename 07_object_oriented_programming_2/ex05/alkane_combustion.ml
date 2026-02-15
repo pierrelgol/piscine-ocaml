@@ -37,7 +37,7 @@ class alkane_combustion (alkanes : Molecule.alkane list) =
             else
               let o2 = oxygen_atoms / 2 in
               let products =
-                [ (new Molecule.carbon_dioxide :> Molecule.molecule, co2_left); (new Molecule.carbon_monoxide :> Molecule.molecule, co); (new Molecule.carbon :> Molecule.molecule, c_soot); (new Molecule.water :> Molecule.molecule, h2o) ]
+                [ ((new Molecule.carbon_dioxide :> Molecule.molecule), co2_left); ((new Molecule.carbon_monoxide :> Molecule.molecule), co); ((new Molecule.carbon :> Molecule.molecule), c_soot); ((new Molecule.water :> Molecule.molecule), h2o) ]
                 |> List.filter (fun (_, n) -> n > 0)
               in
               build (co2_left - 1) (co + 1) ((o2, products) :: acc)
