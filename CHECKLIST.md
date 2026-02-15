@@ -43,7 +43,7 @@
 
 ## 04 Imperative features
 - [x] ex00 micronap
-- [ ] ex01 ft_ref
+- [x] ex01 ft_ref
 - [ ] ex02 jokes
 - [ ] ex03 jokes improved
 - [ ] ex04 sum
