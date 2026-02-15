@@ -38,7 +38,7 @@
 ## 03 OCaml modules language
 - [x] ex00 Color
 - [x] ex01 Value
-- [ ] ex02 Card
+- [x] ex02 Card
 - [ ] ex03 Deck
 
 ## 04 Imperative features
