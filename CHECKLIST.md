@@ -22,7 +22,7 @@
 - [x] ex06 iter
 - [x] ex07 converges
 - [x] ex08 ft_sum
-- [ ] ex09 leibniz_pi
+- [x] ex09 leibniz_pi
 
 ## 02 Pattern Matching and Data Types
 - [ ] ex00 encode
