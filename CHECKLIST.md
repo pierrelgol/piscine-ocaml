@@ -68,7 +68,7 @@
 
 ## 07 Object-oriented programming 2
 - [x] ex00 atoms
-- [ ] ex01 molecules
+- [x] ex01 molecules
 - [ ] ex02 alkanes
 - [ ] ex03 reactions
 - [ ] ex04 alkane combustion
