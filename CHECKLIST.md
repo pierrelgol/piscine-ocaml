@@ -48,7 +48,7 @@
 - [x] ex03 jokes improved
 - [x] ex04 sum
 - [x] ex05 eu_dist
-- [ ] ex06 examples_of_file
+- [x] ex06 examples_of_file
 - [ ] ex07 one_nn
 - [ ] ex08 k_nn
 
