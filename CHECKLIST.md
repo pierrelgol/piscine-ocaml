@@ -78,5 +78,5 @@
 - [x] ex00 all along the watchtower
 - [x] ex01 alan parson's project
 - [x] ex02 functoids
-- [ ] ex03 try
+- [x] ex03 try
 - [ ] ex04 game set and match
