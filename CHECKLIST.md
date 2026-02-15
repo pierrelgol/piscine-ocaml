@@ -63,7 +63,7 @@
 - [x] ex00 people
 - [x] ex01 doctor
 - [x] ex02 dalek
-- [ ] ex03 army
+- [x] ex03 army
 - [ ] ex04 galifrey
 
 ## 07 Object-oriented programming 2
