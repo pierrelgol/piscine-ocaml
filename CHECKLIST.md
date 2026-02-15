@@ -15,7 +15,7 @@
 ## 01 Recursion and higher-order functions
 - [x] ex00 repeat_x
 - [x] ex01 repeat_string
-- [ ] ex02 ackermann
+- [x] ex02 ackermann
 - [ ] ex03 tak
 - [ ] ex04 fibonacci
 - [ ] ex05 hofstadter_mf
