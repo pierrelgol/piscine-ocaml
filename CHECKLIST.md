@@ -30,7 +30,7 @@
 - [x] ex02 gray
 - [x] ex03 sequence
 - [x] ex04 nucleotides
-- [ ] ex05 helix
+- [x] ex05 helix
 - [ ] ex06 rna
 - [ ] ex07 ribosome
 - [ ] ex08 life
