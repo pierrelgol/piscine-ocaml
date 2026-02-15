@@ -18,7 +18,7 @@
 - [x] ex02 ackermann
 - [x] ex03 tak
 - [x] ex04 fibonacci
-- [ ] ex05 hofstadter_mf
+- [x] ex05 hofstadter_mf
 - [ ] ex06 iter
 - [ ] ex07 converges
 - [ ] ex08 ft_sum
