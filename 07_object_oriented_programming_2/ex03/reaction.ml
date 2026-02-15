@@ -8,7 +8,7 @@ class virtual reaction (start : (Molecule.molecule * int) list) (result : (Molec
     method protected_start = start
     method protected_result = result
 
-    method to_string side =
+    method to_string (side : (Molecule.molecule * int) list) =
       String.concat " + "
         (List.map
            (fun (m, n) -> if n = 1 then m#formula else string_of_int n ^ m#formula)

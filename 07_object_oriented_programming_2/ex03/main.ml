@@ -1,5 +1,5 @@
 class sample_reaction s r =
-  object
+  object (self)
     inherit Reaction.reaction s r
     method get_start = s
     method get_result = r
