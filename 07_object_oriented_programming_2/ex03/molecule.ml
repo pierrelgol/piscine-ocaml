@@ -1,4 +1,4 @@
-class virtual molecule name formula =
+class virtual molecule (name : string) (formula : string) =
   object
     method name = name
     method formula = formula
