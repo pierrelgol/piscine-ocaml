@@ -39,7 +39,7 @@
 - [x] ex00 Color
 - [x] ex01 Value
 - [x] ex02 Card
-- [ ] ex03 Deck
+- [x] ex03 Deck
 
 ## 04 Imperative features
 - [ ] ex00 micronap
