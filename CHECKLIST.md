@@ -60,7 +60,7 @@
 - [x] ex04 Evalexpr
 
 ## 06 Object-oriented programming 1
-- [ ] ex00 people
+- [x] ex00 people
 - [ ] ex01 doctor
 - [ ] ex02 dalek
 - [ ] ex03 army
