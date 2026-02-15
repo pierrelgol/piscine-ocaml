@@ -54,7 +54,7 @@
 
 ## 05 Functors
 - [x] ex00 Set.Make
-- [ ] ex01 Hashtbl.Make
+- [x] ex01 Hashtbl.Make
 - [ ] ex02 Projections
 - [ ] ex03 Fixed point
 - [ ] ex04 Evalexpr
