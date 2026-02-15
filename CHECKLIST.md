@@ -53,7 +53,7 @@
 - [x] ex08 k_nn
 
 ## 05 Functors
-- [ ] ex00 Set.Make
+- [x] ex00 Set.Make
 - [ ] ex01 Hashtbl.Make
 - [ ] ex02 Projections
 - [ ] ex03 Fixed point
