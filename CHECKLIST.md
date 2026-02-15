@@ -79,4 +79,4 @@
 - [x] ex01 alan parson's project
 - [x] ex02 functoids
 - [x] ex03 try
-- [ ] ex04 game set and match
+- [x] ex04 game set and match
