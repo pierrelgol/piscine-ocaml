@@ -6,7 +6,7 @@
 - [x] ex02 ft_power
 - [x] ex03 ft_print_alphabet
 - [x] ex04 ft_print_comb
-- [ ] ex05 ft_print_rev
+- [x] ex05 ft_print_rev
 - [ ] ex06 ft_string_all
 - [ ] ex07 ft_is_palindrome
 - [ ] ex08 ft_rot_n
