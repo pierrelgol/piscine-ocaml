@@ -25,7 +25,7 @@
 - [x] ex09 leibniz_pi
 
 ## 02 Pattern Matching and Data Types
-- [ ] ex00 encode
+- [x] ex00 encode
 - [ ] ex01 crossover
 - [ ] ex02 gray
 - [ ] ex03 sequence
