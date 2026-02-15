@@ -64,7 +64,7 @@
 - [x] ex01 doctor
 - [x] ex02 dalek
 - [x] ex03 army
-- [ ] ex04 galifrey
+- [x] ex04 galifrey
 
 ## 07 Object-oriented programming 2
 - [ ] ex00 atoms
