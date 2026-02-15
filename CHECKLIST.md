@@ -57,7 +57,7 @@
 - [x] ex01 Hashtbl.Make
 - [x] ex02 Projections
 - [x] ex03 Fixed point
-- [ ] ex04 Evalexpr
+- [x] ex04 Evalexpr
 
 ## 06 Object-oriented programming 1
 - [ ] ex00 people
