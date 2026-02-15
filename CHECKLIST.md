@@ -33,7 +33,7 @@
 - [x] ex05 helix
 - [x] ex06 rna
 - [x] ex07 ribosome
-- [ ] ex08 life
+- [x] ex08 life
 
 ## 03 OCaml modules language
 - [ ] ex00 Color
