@@ -49,7 +49,7 @@
 - [x] ex04 sum
 - [x] ex05 eu_dist
 - [x] ex06 examples_of_file
-- [ ] ex07 one_nn
+- [x] ex07 one_nn
 - [ ] ex08 k_nn
 
 ## 05 Functors
