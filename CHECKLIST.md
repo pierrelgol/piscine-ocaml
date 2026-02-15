@@ -70,7 +70,7 @@
 - [x] ex00 atoms
 - [x] ex01 molecules
 - [x] ex02 alkanes
-- [ ] ex03 reactions
+- [x] ex03 reactions
 - [ ] ex04 alkane combustion
 - [ ] ex05 incomplete combustion
 
