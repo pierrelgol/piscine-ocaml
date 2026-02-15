@@ -31,7 +31,7 @@
 - [x] ex03 sequence
 - [x] ex04 nucleotides
 - [x] ex05 helix
-- [ ] ex06 rna
+- [x] ex06 rna
 - [ ] ex07 ribosome
 - [ ] ex08 life
 
