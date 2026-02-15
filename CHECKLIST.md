@@ -10,7 +10,7 @@
 - [x] ex06 ft_string_all
 - [x] ex07 ft_is_palindrome
 - [x] ex08 ft_rot_n
-- [ ] ex09 ft_print_comb2
+- [x] ex09 ft_print_comb2
 
 ## 01 Recursion and higher-order functions
 - [ ] ex00 repeat_x
