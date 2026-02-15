@@ -32,7 +32,7 @@
 - [x] ex04 nucleotides
 - [x] ex05 helix
 - [x] ex06 rna
-- [ ] ex07 ribosome
+- [x] ex07 ribosome
 - [ ] ex08 life
 
 ## 03 OCaml modules language
