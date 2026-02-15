@@ -13,7 +13,7 @@ class doctor name age sidekick =
 
     method travel_in_time start arrival =
       _age <- _age + (arrival - start);
-      print_endline "  _");
+      print_endline "  _";
       print_endline " /_\\";
       print_endline "|TARDIS|"
 
