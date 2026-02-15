@@ -67,7 +67,7 @@
 - [x] ex04 galifrey
 
 ## 07 Object-oriented programming 2
-- [ ] ex00 atoms
+- [x] ex00 atoms
 - [ ] ex01 molecules
 - [ ] ex02 alkanes
 - [ ] ex03 reactions
