@@ -29,7 +29,7 @@
 - [x] ex01 crossover
 - [x] ex02 gray
 - [x] ex03 sequence
-- [ ] ex04 nucleotides
+- [x] ex04 nucleotides
 - [ ] ex05 helix
 - [ ] ex06 rna
 - [ ] ex07 ribosome
