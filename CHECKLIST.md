@@ -26,7 +26,7 @@
 
 ## 02 Pattern Matching and Data Types
 - [x] ex00 encode
-- [ ] ex01 crossover
+- [x] ex01 crossover
 - [ ] ex02 gray
 - [ ] ex03 sequence
 - [ ] ex04 nucleotides
