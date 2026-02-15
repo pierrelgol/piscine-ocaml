@@ -28,7 +28,7 @@
 - [x] ex00 encode
 - [x] ex01 crossover
 - [x] ex02 gray
-- [ ] ex03 sequence
+- [x] ex03 sequence
 - [ ] ex04 nucleotides
 - [ ] ex05 helix
 - [ ] ex06 rna
