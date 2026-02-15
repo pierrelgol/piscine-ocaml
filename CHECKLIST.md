@@ -36,7 +36,7 @@
 - [x] ex08 life
 
 ## 03 OCaml modules language
-- [ ] ex00 Color
+- [x] ex00 Color
 - [ ] ex01 Value
 - [ ] ex02 Card
 - [ ] ex03 Deck
