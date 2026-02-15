@@ -62,7 +62,7 @@
 ## 06 Object-oriented programming 1
 - [x] ex00 people
 - [x] ex01 doctor
-- [ ] ex02 dalek
+- [x] ex02 dalek
 - [ ] ex03 army
 - [ ] ex04 galifrey
 
