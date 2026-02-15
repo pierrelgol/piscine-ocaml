@@ -1,4 +1,9 @@
 let gray n =
+  let rec append a b =
+    match a with
+    | [] -> b
+    | x :: xs -> x :: append xs b
+  in
   let rec build k =
     if k <= 0 then [ "" ]
     else
@@ -9,7 +14,7 @@ let gray n =
       in
       let left = pref "0" prev in
       let right = pref "1" (List.rev prev) in
-      left @ right
+      append left right
   in
   let seq = build n in
   print_endline (String.concat " " seq)
