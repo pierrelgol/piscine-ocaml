@@ -75,7 +75,7 @@
 - [x] ex05 incomplete combustion
 
 ## 08 Monoids and Monads
-- [ ] ex00 all along the watchtower
+- [x] ex00 all along the watchtower
 - [ ] ex01 alan parson's project
 - [ ] ex02 functoids
 - [ ] ex03 try
