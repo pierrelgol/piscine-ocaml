@@ -71,7 +71,7 @@
 - [x] ex01 molecules
 - [x] ex02 alkanes
 - [x] ex03 reactions
-- [ ] ex04 alkane combustion
+- [x] ex04 alkane combustion
 - [ ] ex05 incomplete combustion
 
 ## 08 Monoids and Monads
