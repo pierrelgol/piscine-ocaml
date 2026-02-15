@@ -17,7 +17,7 @@
 - [x] ex01 repeat_string
 - [x] ex02 ackermann
 - [x] ex03 tak
-- [ ] ex04 fibonacci
+- [x] ex04 fibonacci
 - [ ] ex05 hofstadter_mf
 - [ ] ex06 iter
 - [ ] ex07 converges
