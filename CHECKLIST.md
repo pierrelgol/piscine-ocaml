@@ -19,7 +19,7 @@
 - [x] ex03 tak
 - [x] ex04 fibonacci
 - [x] ex05 hofstadter_mf
-- [ ] ex06 iter
+- [x] ex06 iter
 - [ ] ex07 converges
 - [ ] ex08 ft_sum
 - [ ] ex09 leibniz_pi
