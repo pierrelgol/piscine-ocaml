@@ -46,7 +46,7 @@
 - [x] ex01 ft_ref
 - [x] ex02 jokes
 - [x] ex03 jokes improved
-- [ ] ex04 sum
+- [x] ex04 sum
 - [ ] ex05 eu_dist
 - [ ] ex06 examples_of_file
 - [ ] ex07 one_nn
