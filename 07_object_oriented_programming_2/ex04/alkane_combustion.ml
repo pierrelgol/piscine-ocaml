@@ -1,47 +1,86 @@
-let gcd a b =
-  let rec loop x y = if y = 0 then x else loop y (x mod y) in
-  loop (abs a) (abs b)
+let rec gcd left right =
+  if right = 0 then abs left else gcd right (left mod right)
 
-class alkane_combustion (alkanes : Molecule.alkane list) =
+let gcd_list values =
+  List.fold_left
+    (fun current value -> if current = 0 then value else gcd current value)
+    0 values
+
+let combine_alkanes (alkanes : Molecule.alkane list) =
+  let rec add alkane grouped =
+    match grouped with
+    | [] -> [ (alkane, 1) ]
+    | (existing, amount) :: tail when existing#equals (alkane :> Molecule.molecule) ->
+        (existing, amount + 1) :: tail
+    | head :: tail -> head :: add alkane tail
+  in
+  List.fold_left (fun grouped alkane -> add alkane grouped) [] alkanes
+
+let totals grouped_alkanes =
+  List.fold_left
+    (fun (carbon_total, hydrogen_total) (alkane, amount) ->
+      ( carbon_total + (amount * alkane#carbon_count),
+        hydrogen_total + (amount * alkane#hydrogen_count) ))
+    (0, 0) grouped_alkanes
+
+let balanced_state grouped_alkanes =
+  let carbon_total, hydrogen_total = totals grouped_alkanes in
+  let water_amount = hydrogen_total / 2 in
+  let oxygen_atoms = (2 * carbon_total) + water_amount in
+  let multiplier = if oxygen_atoms mod 2 = 0 then 1 else 2 in
+  let oxygen_amount = if multiplier = 1 then oxygen_atoms / 2 else oxygen_atoms in
+  let scaled_alkanes =
+    List.map
+      (fun (alkane, amount) ->
+        ((alkane :> Molecule.molecule), amount * multiplier))
+      grouped_alkanes
+  in
+  let scaled_result =
+    [
+      ((new Molecule.carbon_dioxide :> Molecule.molecule), carbon_total * multiplier);
+      ((new Molecule.water :> Molecule.molecule), water_amount * multiplier);
+    ]
+  in
+  let all_coefficients =
+    oxygen_amount
+    :: List.map snd scaled_result
+    @ List.map snd scaled_alkanes
+  in
+  let divisor = gcd_list all_coefficients in
+  let normalize side =
+    List.map (fun (molecule, amount) -> (molecule, amount / divisor)) side
+  in
+  ( normalize
+      (scaled_alkanes @ [ ((new Molecule.oxygen :> Molecule.molecule), oxygen_amount) ]),
+    normalize scaled_result )
+
+class alkane_combustion
+  ?(state :
+      ((Molecule.molecule * int) list * (Molecule.molecule * int) list) option =
+      None)
+  (alkanes : Molecule.alkane list) =
+  let grouped_alkanes = combine_alkanes alkanes in
   object (self)
-    inherit Reaction.reaction
+    inherit
+      Reaction.reaction
+        (List.map (fun (alkane, amount) -> ((alkane :> Molecule.molecule), amount)) grouped_alkanes)
+        []
 
-    val reactives : (Molecule.molecule * int) list =
-      List.map (fun a -> ((a :> Molecule.molecule), 1)) alkanes
-
-    method private totals =
-      List.fold_left
-        (fun (c, h) a -> (c + a#carbon_count, h + a#hydrogen_count))
-        (0, 0) alkanes
-
-    method private balanced_coeffs =
-      let c, h = self#totals in
-      let water = h / 2 in
-      let oxy_num = 2 * c + water in
-      if oxy_num mod 2 = 0 then (1, oxy_num / 2, c, water)
-      else (2, oxy_num, 2 * c, 2 * water)
-
-    method is_balanced =
-      let (_, o2c, co2c, h2oc) = self#balanced_coeffs in
-      let (c, h) = self#totals in
-      let left_c = c in
-      let left_h = h in
-      let left_o = 2 * o2c in
-      let right_c = co2c in
-      let right_h = 2 * h2oc in
-      let right_o = (2 * co2c) + h2oc in
-      left_c = right_c && left_h = right_h && left_o = right_o
+    method private state = state
+    method is_balanced = match self#state with Some _ -> true | None -> false
 
     method get_start =
-      if not self#is_balanced then raise (Failure "Unbalanced reaction");
-      let (mul, o2c, _, _) = self#balanced_coeffs in
-      let scaled = List.map (fun (m, n) -> (m, n * mul)) reactives in
-      scaled @ [ ((new Molecule.oxygen :> Molecule.molecule), o2c) ]
+      match self#state with
+      | Some (start, _) -> start
+      | None -> raise (Failure "Reaction is not balanced")
 
     method get_result =
-      if not self#is_balanced then raise (Failure "Unbalanced reaction");
-      let (_, _, co2c, h2oc) = self#balanced_coeffs in
-      [ ((new Molecule.carbon_dioxide :> Molecule.molecule), co2c); ((new Molecule.water :> Molecule.molecule), h2oc) ]
+      match self#state with
+      | Some (_, result) -> result
+      | None -> raise (Failure "Reaction is not balanced")
 
-    method balance = (self :> Reaction.reaction)
+    method balance =
+      let balanced_start, balanced_result = balanced_state grouped_alkanes in
+      (new alkane_combustion ~state:(Some (balanced_start, balanced_result)) alkanes
+        :> Reaction.reaction)
   end

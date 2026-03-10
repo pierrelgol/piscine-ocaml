@@ -1,5 +1,5 @@
 NAME = main
-SRC = molecule.ml reaction.ml alkane_combustion.ml main.ml
+SRC = atom.ml molecule.ml reaction.ml alkane_combustion.ml main.ml
 
 all: $(NAME)
 
