@@ -11,6 +11,15 @@ class doctor name age sidekick =
 
     method talk = print_endline "Hi! I'm the Doctor!"
 
+    method travel_in_time start arrival =
+      _age <- _age + (arrival - start);
+      print_endline "  _";
+      print_endline " /_\\";
+      print_endline "|TARDIS|"
+
+    method use_sonic_screwdriver =
+      print_endline "Whiiiiwhiiiwhiii Whiiiiwhiiiwhiii Whiiiiwhiiiwhiii"
+
     method die =
       if _hp > 0 then (
         _hp <- 0;
