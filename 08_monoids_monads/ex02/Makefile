@@ -4,10 +4,10 @@ SRC = main.ml
 all: $(NAME)
 
 $(NAME): $(SRC)
-	ocamlc -o $(NAME) $(SRC)
+	ocamlopt -o $(NAME) $(SRC)
 
 clean:
-	rm -f *.cmo *.cmi
+	rm -f *.cmx *.cmi *.o
 
 fclean: clean
 	rm -f $(NAME)
